@@ -13,5 +13,20 @@ public class App {
         System.out.println("Texto original: "+texto);
         System.out.println("Texto codificado: "+codificado);
         System.out.println("Texto decodificado: "+decodificado);
+
+        CodificadorAleatorio codificadorAleatorio = new CodificadorAleatorio();
+        
+        System.out.println("Codificador: "+codificadorAleatorio.getNome());
+        System.out.println("Versao: "+codificadorAleatorio.getDataCriacao());
+        System.out.println("Nivel de segurança: "+codificadorAleatorio.getNivelSeguranca());
+        
+        String codificado2 = codificadorAleatorio.codifica(texto);
+        String decodificado2 = codificadorAleatorio.decodifica(codificado);
+
+        System.out.println("Texto original: "+texto);
+        System.out.println("Texto codificado: "+codificado2);
+        System.out.println("Texto decodificado: "+decodificado2);
+
+
     }
 }
