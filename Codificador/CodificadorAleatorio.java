@@ -1,11 +1,12 @@
 import java.time.LocalDate;
 import java.util.Random;
-public class CodificadorAleatorio
-{
+
+public class CodificadorAleatorio implements Codificador{
+
     private Random random;
     private int numero_random;
 
-    CodificadorAleatorio(){
+    public CodificadorAleatorio(){
         this.random = new Random();
         this.numero_random = random.nextInt(10);
     }
